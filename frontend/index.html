@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Auto Newsroom Generator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>📰 Auto Newsroom Generator</h1>
+    <form id="newsForm">
+      <input type="text" id="topicInput" placeholder="Enter topic or keyword..." required />
+      <button type="submit">Generate Article</button>
+    </form>
+    
+    <div id="result" class="hidden">
+      <h2>🧠 Headline:</h2>
+      <p id="headline"></p>
+
+      <h2>📝 Article:</h2>
+      <p id="body"></p>
+
+      <h2>🔍 Fact Check Issues:</h2>
+      <ul id="issues"></ul>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
